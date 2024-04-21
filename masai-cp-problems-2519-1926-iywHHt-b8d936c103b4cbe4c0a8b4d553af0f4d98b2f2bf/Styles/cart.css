@@ -1,0 +1,73 @@
+/* basic cart CSS */
+#discount {
+  /* color:white; */
+  height: 25px;
+  text-align: center;
+  width: 200px; /* Set the width of the container div */
+  overflow: hidden; /* Hide any overflowing content */
+  width: 100%;
+  background-color: #73cdc1;
+}
+
+.marquee {
+  display: inline-block;
+  font-weight: 500;
+  white-space: nowrap; /* Prevent line breaks */
+  animation: marquee 15s linear infinite; /* Run the marquee animation continuously */
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%); /* Start from the right */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to the left */
+  }
+}
+
+/* Style for cart items */
+.cart-item {
+  display: grid;
+ grid-template-columns: auto auto auto auto;
+
+}
+
+.item-image {
+  width: 100px;
+  height: 100px;
+  margin-right: 20px;
+}
+
+/* .item-details {
+  flex: 1;
+}
+
+.item-details h3 {
+  margin: 0;
+}
+
+.item-details p {
+  margin: 5px 0;
+} */
+
+/* Style for remove button */
+.remove-button {
+  background-color: #ff5252;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.remove-button:hover {
+  background-color: #c50f0f;
+}
+
+/* Style for total items and total amount */
+#totalItems,
+#totalAmount {
+  margin-top: 20px;
+}
+
+
